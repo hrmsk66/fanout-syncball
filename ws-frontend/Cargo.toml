@@ -1,0 +1,15 @@
+
+[dependencies]
+  fastly = "^0.8"
+
+[package]
+  authors = []
+  edition = "2018"
+  name = "ws-frontend"
+  publish = false
+  version = "0.1.0"
+
+[profile]
+
+  [profile.release]
+    debug = 1

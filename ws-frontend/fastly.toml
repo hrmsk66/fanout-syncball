@@ -1,0 +1,9 @@
+# This file describes a Fastly Compute@Edge package. To learn more visit:
+# https://developer.fastly.com/reference/fastly-toml/
+
+authors = ["hkakehashi+demo@fastly.com"]
+description = "A basic starter kit that demonstrates routing, simple synthetic responses and overriding caching rules."
+language = "rust"
+manifest_version = 2
+name = "ws-frontend"
+service_id = "4AULa2RBtJ1j2Qb72yfz8r"

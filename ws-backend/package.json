@@ -1,0 +1,32 @@
+{
+    "author": "oss@fastly.com",
+    "dependencies": {
+        "@fanoutio/grip": "^3.1.0",
+        "@fastly/grip-compute-js": "^0.1.0",
+        "@fastly/js-compute": "^0.3.0"
+    },
+    "devDependencies": {
+        "buffer": "^6.0.3",
+        "core-js": "^3.19.1",
+        "crypto-browserify": "^3.12.0",
+        "process": "^0.11.10",
+        "querystring-es3": "^0.2.1",
+        "stream-browserify": "^3.0.0",
+        "url": "^0.11.0",
+        "util": "^0.12.4",
+        "webpack": "^5.64.0",
+        "webpack-cli": "^4.9.1"
+    },
+    "engines": {
+        "node": "^16"
+    },
+    "license": "MIT",
+    "main": "src/index.js",
+    "name": "ws-backend",
+    "scripts": {
+        "build": "js-compute-runtime bin/index.js bin/main.wasm",
+        "deploy": "npm run build && fastly compute deploy",
+        "prebuild": "webpack"
+    },
+    "version": "0.3.0"
+}
